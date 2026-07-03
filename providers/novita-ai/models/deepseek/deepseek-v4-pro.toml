@@ -5,9 +5,9 @@ reasoning_options = [{ type = "toggle" }, { type = "effort", values = ["low", "m
 field = "reasoning_content"
 
 [cost]
-input = 1.6
-output = 3.2
-cache_read = 0.135
+input = 16
+output = 32
+cache_read = 1.35
 
 [limit]
 context = 1_048_576
