@@ -2,7 +2,7 @@ name = "OpenAI o4-mini"
 description = "O-series reasoning model for hard analysis, math, coding, and planning"
 family = "o-mini"
 release_date = "2025-01-31"
-last_updated = "2025-01-31"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -12,9 +12,9 @@ tool_call = false
 open_weights = false
 
 [cost]
-input = 0.00
-output = 0.00
-
+input = 1.1
+output = 4.4
+cache_read = 0.55
 [limit]
 context = 200_000
 output = 100_000

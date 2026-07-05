@@ -2,7 +2,7 @@ name = "GPT-4.1-nano"
 description = "Compact GPT model for low-latency assistance and high-volume workloads"
 family = "gpt-nano"
 release_date = "2025-04-14"
-last_updated = "2025-04-14"
+last_updated = "2026-07-05"
 attachment = true
 reasoning = false
 temperature = true
@@ -11,9 +11,9 @@ tool_call = true
 open_weights = false
 
 [cost]
-input = 0.00
-output = 0.00
-
+input = 0.1
+output = 0.4
+cache_read = 0.03
 [limit]
 context = 128_000
 output = 16_384
