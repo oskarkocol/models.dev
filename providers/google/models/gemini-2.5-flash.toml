@@ -10,6 +10,8 @@ max = 24_576
 
 [cost]
 input = 0.30
+cache_write = 0.083333
+
 output = 2.50
 cache_read = 0.03
 input_audio = 1.00
