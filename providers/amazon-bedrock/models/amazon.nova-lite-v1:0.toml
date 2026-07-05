@@ -2,7 +2,7 @@ name = "Nova Lite"
 description = "Efficient model for low-latency assistance, extraction, and routine automation"
 family = "nova-lite"
 release_date = "2024-12-03"
-last_updated = "2024-12-03"
+last_updated = "2026-07-05"
 attachment = true
 reasoning = false
 temperature = true
@@ -13,8 +13,7 @@ open_weights = false
 [cost]
 input = 0.06
 output = 0.24
-cache_read = 0.015
-
+cache_read = 0
 [limit]
 context = 300_000
 output = 8_192
