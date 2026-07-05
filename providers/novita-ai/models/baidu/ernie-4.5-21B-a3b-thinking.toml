@@ -2,7 +2,7 @@ name = "ERNIE-4.5-21B-A3B-Thinking"
 description = "Reasoning model for deliberate analysis, multi-step problem solving, and tool use"
 family = "ernie"
 release_date = "2025-09-19"
-last_updated = "2025-09-19"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -12,9 +12,8 @@ tool_call = false
 open_weights = true
 
 [cost]
-input = 0.07
-output = 0.28
-
+input = 0.7
+output = 2.8
 [limit]
 context = 131_072
 output = 65_536

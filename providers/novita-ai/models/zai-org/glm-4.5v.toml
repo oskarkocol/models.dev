@@ -2,7 +2,7 @@ name = "GLM 4.5V"
 description = "GLM vision model for visual reasoning, documents, and multimodal agents"
 family = "glmv"
 release_date = "2025-08-11"
-last_updated = "2025-08-11"
+last_updated = "2026-07-05"
 attachment = true
 reasoning = true
 reasoning_options = [{ type = "toggle" }]
@@ -13,9 +13,9 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.6
-output = 1.8
-cache_read = 0.11
+input = 6
+output = 18
+cache_read = 1.1
 [limit]
 context = 65_536
 output = 16_384

@@ -1,7 +1,7 @@
 name = "DeepSeek R1 (Turbo)	"
 description = "DeepSeek reasoning model for multi-step analysis, math, coding, and tools"
 release_date = "2025-03-05"
-last_updated = "2025-03-05"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -10,9 +10,8 @@ tool_call = true
 open_weights = true
 
 [cost]
-input = 0.7
-output = 2.5
-
+input = 7
+output = 25
 [limit]
 context = 64_000
 output = 16_000

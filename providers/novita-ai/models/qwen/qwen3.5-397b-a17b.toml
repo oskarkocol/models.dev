@@ -2,7 +2,7 @@ name = "Qwen3.5-397B-A17B"
 description = "Qwen vision-language model for visual reasoning, documents, and agent tasks"
 family = "qwen"
 release_date = "2026-02-17"
-last_updated = "2026-02-17"
+last_updated = "2026-07-05"
 attachment = true
 reasoning = true
 reasoning_options = [{ type = "toggle" }]
@@ -12,9 +12,8 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.6
-output = 3.6
-
+input = 6
+output = 36
 [limit]
 context = 262_144
 output = 64_000

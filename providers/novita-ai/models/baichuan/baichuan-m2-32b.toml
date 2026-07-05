@@ -2,7 +2,7 @@ name = "baichuan-m2-32b"
 description = "Open-weight instruction model for adaptable chat and self-hosted production workloads"
 family = "baichuan"
 release_date = "2025-08-13"
-last_updated = "2025-08-13"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = false
 temperature = true
@@ -12,9 +12,8 @@ structured_output = false
 open_weights = true
 
 [cost]
-input = 0.07
-output = 0.07
-
+input = 0.7
+output = 0.7
 [limit]
 context = 131072
 output = 131072

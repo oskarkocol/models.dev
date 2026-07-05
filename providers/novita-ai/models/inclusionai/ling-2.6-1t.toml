@@ -2,7 +2,7 @@ name = "Ling-2.6-1T"
 description = "Open-weight instruction model for adaptable chat and self-hosted production workloads"
 family = "ling"
 release_date = "2026-04-23"
-last_updated = "2026-06-29"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = false
 temperature = true
@@ -11,10 +11,9 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.3
-output = 2.5
-cache_read = 0.06
-
+input = 3
+output = 25
+cache_read = 0.6
 [limit]
 context = 262_144
 output = 32_768

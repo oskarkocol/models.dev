@@ -2,7 +2,7 @@ name = "XiaomiMiMo/MiMo-V2-Flash"
 description = "MiMo flash model for fast multimodal assistance and agent workflows"
 family = "mimo"
 release_date = "2025-12-19"
-last_updated = "2025-12-19"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -13,10 +13,9 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.1
-output = 0.3
-cache_read = 0.30
-
+input = 1.1
+output = 3.3
+cache_read = 0.24
 [limit]
 context = 262_144
 output = 32_000

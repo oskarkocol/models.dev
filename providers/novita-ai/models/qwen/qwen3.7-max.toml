@@ -2,7 +2,7 @@ name = "Qwen3.7-Max"
 description = "Flagship Qwen model for complex reasoning, coding, and agentic workflows"
 family = "qwen"
 release_date = "2026-05-21"
-last_updated = "2026-05-27"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = true
 reasoning_options = [{ type = "toggle" }]
@@ -12,9 +12,9 @@ structured_output = true
 open_weights = false
 
 [cost]
-input = 1.25
-output = 3.75
-cache_read = 0.25
+input = 12.5
+output = 37.5
+cache_read = 2.5
 cache_write = 1.5625
 
 [limit]

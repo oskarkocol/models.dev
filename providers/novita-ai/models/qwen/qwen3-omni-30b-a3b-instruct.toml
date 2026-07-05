@@ -2,7 +2,7 @@ name = "Qwen3 Omni 30B A3B Instruct"
 description = "Qwen omni model for text, vision, audio, and multimodal agent tasks"
 family = "qwen"
 release_date = "2025-09-24"
-last_updated = "2025-09-24"
+last_updated = "2026-07-05"
 attachment = true
 reasoning = false
 temperature = true
@@ -12,8 +12,8 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.25
-output = 0.97
+input = 2.5
+output = 9.7
 input_audio = 2.2        # Cost per million audio input tokens (USD)
 output_audio = 1.788
 [limit]

@@ -2,7 +2,7 @@ name = "GLM 4.5 Air"
 description = "Efficient GLM model for fast reasoning, coding, and agent workflows"
 family = "glm-air"
 release_date = "2025-10-13"
-last_updated = "2025-10-13"
+last_updated = "2026-07-05"
 attachment = false
 reasoning = true
 reasoning_options = [{ type = "toggle" }]
@@ -12,10 +12,9 @@ tool_call = true
 open_weights = true
 
 [cost]
-input = 0.13
-output = 0.85
-cache_read = 0.025
-
+input = 1.3
+output = 8.5
+cache_read = 0.25
 [limit]
 context = 131_072
 output = 98_304

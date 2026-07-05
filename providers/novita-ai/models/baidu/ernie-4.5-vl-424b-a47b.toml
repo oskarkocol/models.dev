@@ -1,7 +1,7 @@
 name = "ERNIE 4.5 VL 424B A47B"
 description = "Multimodal reasoning model for visual analysis, planning, and tool use"
 release_date = "2025-06-30"
-last_updated = "2025-06-30"
+last_updated = "2026-07-05"
 attachment = true
 reasoning = true
 reasoning_options = []
@@ -10,9 +10,8 @@ tool_call = false
 open_weights = true
 
 [cost]
-input = 0.42
-output = 1.25
-
+input = 4.2
+output = 12.5
 [limit]
 context = 123_000
 output = 16_000
