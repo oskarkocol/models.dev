@@ -1,3 +1,4 @@
+# https://deepinfra.com/MiniMaxAI/MiniMax-M2.5
 name = "MiniMax M2.5"
 description = "MiniMax model for chat, coding, office work, and agentic tasks"
 family = "minimax"
@@ -5,14 +6,11 @@ release_date = "2026-02-12"
 last_updated = "2026-02-12"
 attachment = false
 reasoning = true
+reasoning_options = []
 temperature = true
 tool_call = true
 knowledge = "2025-06"
 open_weights = true
-reasoning_options = []
-
-[interleaved]
-field = "reasoning_content"
 
 [cost]
 input = 0.15
@@ -26,3 +24,6 @@ output = 131_072
 [modalities]
 input = ["text"]
 output = ["text"]
+
+[interleaved]
+field = "reasoning_content"
