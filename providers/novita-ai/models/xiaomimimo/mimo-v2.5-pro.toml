@@ -7,9 +7,9 @@ structured_output = true
 field = "reasoning_content"
 
 [cost]
-input = 0.522
-output = 1.044
-cache_read = 0.0043
+input = 5.22
+output = 10.44
+cache_read = 0.043
 
 [[cost.tiers]]
 tier = { type = "context", size = 256_000 }
