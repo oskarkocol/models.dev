@@ -20,10 +20,10 @@ min = 512
 max = 24_576
 
 [cost]
-input = 0.1
-output = 0.4
-cache_read = 0.01
-input_audio = 0.3
+input = 0.2
+output = 0.7
+cache_read = 0.02
+input_audio = 0.5
 
 [limit]
 context = 1_048_576

@@ -16,10 +16,10 @@ type = "effort"
 values = ["minimal", "low", "medium", "high"]
 
 [cost]
-input = 0.25
-output = 1.50
-cache_read = 0.025
-input_audio = 0.50
+input = 0.45
+output = 2.70
+cache_read = 0.045
+input_audio = 0.90
 
 [limit]
 context = 1_048_576
