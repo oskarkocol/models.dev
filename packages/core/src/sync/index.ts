@@ -4,6 +4,7 @@ import { mergeDeep } from "remeda";
 import { z } from "zod";
 
 import { AuthoredModel, AuthoredModelShape, ModelMetadata } from "../schema.js";
+import { ambient } from "./providers/ambient.js";
 import { anthropic } from "./providers/anthropic.js";
 import { baseten } from "./providers/baseten.js";
 import { chutes } from "./providers/chutes.js";
@@ -11,12 +12,15 @@ import { cloudflareWorkersAi } from "./providers/cloudflare-workers-ai.js";
 import { crossmodel } from "./providers/crossmodel.js";
 import { deepinfra } from "./providers/deepinfra.js";
 import { digitalocean } from "./providers/digitalocean.js";
+import { empiriolabs } from "./providers/empiriolabs.js";
 import { google } from "./providers/google.js";
 import { huggingface } from "./providers/huggingface.js";
+import { kilo } from "./providers/kilo.js";
 import { llmgateway } from "./providers/llmgateway.js";
 import { openai } from "./providers/openai.js";
 import { openrouter } from "./providers/openrouter.js";
 import { ovhcloud } from "./providers/ovhcloud.js";
+import { pioneer } from "./providers/pioneer.js";
 import { vercel } from "./providers/vercel.js";
 import { venice } from "./providers/venice.js";
 import { wandb } from "./providers/wandb.js";
@@ -89,6 +93,7 @@ export interface SyncResult {
 }
 
 export const providers: {
+  ambient: SyncProvider<any>;
   anthropic: SyncProvider<any>;
   baseten: SyncProvider<any>;
   chutes: SyncProvider<any>;
@@ -96,17 +101,21 @@ export const providers: {
   crossmodel: SyncProvider<any>;
   deepinfra: SyncProvider<any>;
   digitalocean: SyncProvider<any>;
+  empiriolabs: SyncProvider<any>;
   google: SyncProvider<any>;
+  kilo: SyncProvider<any>;
   huggingface: SyncProvider<any>;
   llmgateway: SyncProvider<any>;
   openai: SyncProvider<any>;
   openrouter: SyncProvider<any>;
   ovhcloud: SyncProvider<any>;
+  pioneer: SyncProvider<any>;
   vercel: SyncProvider<any>;
   venice: SyncProvider<any>;
   wandb: SyncProvider<any>;
   xai: SyncProvider<any>;
 } = {
+  ambient,
   anthropic,
   baseten,
   chutes,
@@ -114,12 +123,15 @@ export const providers: {
   crossmodel,
   deepinfra,
   digitalocean,
+  empiriolabs,
   google,
+  kilo,
   huggingface,
   llmgateway,
   openai,
   openrouter,
   ovhcloud,
+  pioneer,
   vercel,
   venice,
   wandb,
@@ -127,9 +139,9 @@ export const providers: {
 };
 
 export const groups = {
-  aggregators: ["crossmodel", "huggingface", "llmgateway", "openrouter", "vercel"],
+  aggregators: ["crossmodel", "empiriolabs", "huggingface", "kilo", "llmgateway", "openrouter", "vercel"],
   cloudflare: ["cloudflare-workers-ai"],
-  direct: ["anthropic", "baseten", "chutes", "deepinfra", "digitalocean", "google", "openai", "ovhcloud", "venice", "wandb", "xai"],
+  direct: ["ambient", "anthropic", "baseten", "chutes", "deepinfra", "digitalocean", "google", "openai", "ovhcloud", "pioneer", "venice", "wandb", "xai"],
 } as const;
 
 type ProviderID = keyof typeof providers;
