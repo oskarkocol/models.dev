@@ -4,7 +4,7 @@ description = "Flagship GLM model for hybrid reasoning, coding, and agentic engi
 # effort mapping. https://docs.fireworks.ai/guides/reasoning (accessed 2026-06-25)
 family = "glm"
 release_date = "2026-06-16"
-last_updated = "2026-06-16"
+last_updated = "2026-07-12"
 attachment = false
 reasoning = true
 temperature = true
@@ -21,7 +21,7 @@ values = ["high", "max"]
 [cost]
 input = 1.40
 output = 4.40
-cache_read = 0.14
+cache_read = 0.26
 
 [limit]
 context = 1_048_575
