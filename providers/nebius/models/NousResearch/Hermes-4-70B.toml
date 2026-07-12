@@ -8,13 +8,13 @@ structured_output = true
 temperature = true
 knowledge = "2025-11"
 release_date = "2026-01-30"
-last_updated = "2026-02-04"
+last_updated = "2026-07-12"
 open_weights = true
 
 [cost]
 input = 0.13
 output = 0.40
-reasoning = 0.40
+reasoning = 0
 cache_read = 0.013
 cache_write = 0.16
 
