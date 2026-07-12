@@ -2,7 +2,7 @@ name = "Grok Build 0.1"
 description = "Fast Grok coding model tuned for agentic engineering and iterative edits"
 family = "grok-build"
 release_date = "2026-04-16"
-last_updated = "2026-04-16"
+last_updated = "2026-07-12"
 attachment = true
 reasoning = true
 reasoning_options = []
@@ -12,9 +12,9 @@ structured_output = true
 open_weights = false
 
 [cost]
-input = 1
-output = 2
-cache_read = 0.2
+input = 2
+output = 4
+cache_read = 0.4
 
 [[cost.tiers]]
 tier = { size = 200_000 }
