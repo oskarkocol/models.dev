@@ -2,7 +2,7 @@ name = "Gemini 3.1 Flash Lite"
 description = "Low-latency Gemini model for high-volume multimodal and agent workloads"
 family = "gemini-flash-lite"
 release_date = "2026-05-07"
-last_updated = "2026-05-07"
+last_updated = "2026-07-12"
 attachment = true
 reasoning = true
 temperature = true
@@ -16,9 +16,11 @@ type = "effort"
 values = ["minimal", "low", "medium", "high"]
 
 [cost]
-input = 0.25
-output = 1.50
-cache_read = 0.025
+cache_write = 0.15
+reasoning = 2.7
+input = 0.45
+output = 2.7
+cache_read = 0.045
 input_audio = 0.50
 
 [limit]

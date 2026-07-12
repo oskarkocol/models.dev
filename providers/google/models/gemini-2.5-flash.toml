@@ -9,7 +9,8 @@ min = 0
 max = 24_576
 
 [cost]
-input = 0.30
-output = 2.50
-cache_read = 0.03
+cache_write = 0.15
+input = 0.54
+output = 4.5
+cache_read = 0.054
 input_audio = 1.00

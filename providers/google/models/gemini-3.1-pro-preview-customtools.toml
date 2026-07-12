@@ -2,7 +2,7 @@ name = "Gemini 3.1 Pro Preview Custom Tools"
 description = "Advanced Gemini model for complex reasoning, coding, and multimodal analysis"
 family = "gemini-pro"
 release_date = "2026-02-19"
-last_updated = "2026-02-19"
+last_updated = "2026-07-12"
 attachment = true
 reasoning = true
 temperature = true
@@ -16,6 +16,8 @@ type = "effort"
 values = ["low", "medium", "high"]
 
 [cost]
+cache_write = 0.375
+reasoning = 12
 input = 2.00
 output = 12.00
 cache_read = 0.20
