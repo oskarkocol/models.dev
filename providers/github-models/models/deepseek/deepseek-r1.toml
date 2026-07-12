@@ -2,7 +2,7 @@ name = "DeepSeek-R1"
 description = "DeepSeek reasoning model for multi-step analysis, math, coding, and tools"
 family = "deepseek-thinking"
 release_date = "2025-01-20"
-last_updated = "2025-01-20"
+last_updated = "2026-07-12"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -12,8 +12,8 @@ tool_call = true
 open_weights = true
 
 [cost]
-input = 0.00
-output = 0.00
+input = 1.35
+output = 5.4
 
 [limit]
 context = 65_536
