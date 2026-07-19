@@ -8,7 +8,7 @@ name = "GLM-5.1"
 description = "Flagship GLM model for hybrid reasoning, coding, and agentic engineering"
 family = "glm"
 release_date = "2026-04-07"
-last_updated = "2026-07-02"
+last_updated = "2026-07-19"
 attachment = false
 reasoning = true
 reasoning_options = [{ type = "toggle" }]
@@ -20,6 +20,7 @@ open_weights = true
 status = "deprecated"
 
 [cost]
+cache_read = 0.26
 input = 1.4
 output = 4.4
 cached_input = 0.26
