@@ -2,9 +2,9 @@ name = "Gemini 3 Pro Preview"
 description = "Preview Gemini flagship for complex reasoning, coding, and rich multimodal prompts"
 family = "gemini-pro"
 release_date = "2025-11-18"
-last_updated = "2025-11-18"
+last_updated = "2026-07-19"
 attachment = true
-reasoning = true
+reasoning = 12
 temperature = true
 tool_call = true
 structured_output = true
@@ -17,6 +17,8 @@ type = "effort"
 values = ["low", "high"]
 
 [cost]
+input_audio = 2
+cache_write = 0.375
 input = 2
 output = 12
 cache_read = 0.2

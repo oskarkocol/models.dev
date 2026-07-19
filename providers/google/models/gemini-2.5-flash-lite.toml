@@ -2,9 +2,9 @@ name = "Gemini 2.5 Flash-Lite"
 description = "Lean Gemini 2.5 lane for cheap multimodal traffic and quick agents"
 family = "gemini-flash-lite"
 release_date = "2025-06-17"
-last_updated = "2025-06-17"
+last_updated = "2026-07-19"
 attachment = true
-reasoning = true
+reasoning = 0.4
 temperature = true
 tool_call = true
 structured_output = true
@@ -20,6 +20,7 @@ min = 512
 max = 24_576
 
 [cost]
+cache_write = 0.08333333
 input = 0.1
 output = 0.4
 cache_read = 0.01

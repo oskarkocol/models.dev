@@ -9,6 +9,7 @@ min = 0
 max = 24_576
 
 [cost]
+cache_write = 0.08333333
 input = 0.30
 output = 2.50
 cache_read = 0.03

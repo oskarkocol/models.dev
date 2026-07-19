@@ -6,6 +6,8 @@ min = 128
 max = 32_768
 
 [cost]
+input_audio = 1.25
+cache_write = 0.375
 input = 1.25
 output = 10.00
 cache_read = 0.125
