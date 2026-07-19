@@ -2,7 +2,7 @@ name = "Cohere Command A"
 description = "Cohere command model for multilingual enterprise agents, tools, and chat"
 family = "command-a"
 release_date = "2024-11-01"
-last_updated = "2024-11-01"
+last_updated = "2026-07-19"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -12,8 +12,8 @@ tool_call = true
 open_weights = false
 
 [cost]
-input = 0.00
-output = 0.00
+input = 2.5
+output = 10
 
 [limit]
 context = 128_000
