@@ -559,6 +559,25 @@ test("syncs Hyper pricing from OpenRouter-style per-token strings", () => {
   });
 });
 
+test("syncs Hyper pricing from catalog input/output fields", () => {
+  const model = hyperModel({
+    id: "minimax-m2.7",
+    supports_reasoning: false,
+    pricing: {
+      input: 0.3,
+      output: 1.2,
+      cache_hit: 0.06,
+      cache_create: 0.03,
+    },
+  });
+
+  expect(buildHyperModel(model, undefined, "minimax/MiniMax-M2.7")).toMatchObject({
+    cost: { input: 0.3, output: 1.2, cache_read: 0.06, cache_write: 0.03 },
+    reasoning: false,
+    reasoning_options: [],
+  });
+});
+
 test("preserves existing Hyper cost when API pricing is missing", () => {
   const existing = {
     cost: { input: 1, output: 2 },
