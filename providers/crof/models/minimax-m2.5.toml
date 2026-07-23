@@ -8,7 +8,7 @@ reasoning_options = []
 input = 0.11
 output = 0.95
 cache_read = 0.02
-cache_write = 0.375
+cache_write = 0.000
 
 [provider]
 npm = "@ai-sdk/openai-compatible"
