@@ -5,6 +5,6 @@ reasoning_options = [{ type = "effort", values = ["high", "max"] }]
 field = "reasoning_content"
 
 [cost]
-input = 0.979
-output = 3.08
-cache_read = 0.182
+input = 1.400
+output = 4.40
+cache_read = 0.260
