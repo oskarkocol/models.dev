@@ -14,7 +14,7 @@ open_weights = true
 [cost]
 input = 0.13
 output = 0.40
-reasoning = 0.40
+reasoning = 0.00
 cache_read = 0.013
 cache_write = 0.16
 
