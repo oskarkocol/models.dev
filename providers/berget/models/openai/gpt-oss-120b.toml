@@ -7,9 +7,9 @@ knowledge = "2025-08"
 reasoning_options = [{ type = "effort", values = ["low", "medium", "high"] }]
 
 [cost]
-input = 0.22
-output = 0.83
+input = 0.20
+output = 0.75
 
 [limit]
 context = 128_000
-output = 8_192
+output = 1
