@@ -7,9 +7,9 @@ base_model = "moonshotai/kimi-k2.6"
 field = "reasoning_content"
 
 [cost]
-input = 0.95
-output = 4
-cache_read = 0.2
+input = 0.55
+output = 3
+cache_read = 0.1
 cache_write = 0
 
 [modalities]
