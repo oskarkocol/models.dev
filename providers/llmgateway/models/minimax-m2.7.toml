@@ -2,7 +2,7 @@ base_model = "minimax/MiniMax-M2.7"
 reasoning_options = []
 
 [cost]
-input = 0.3
-output = 1.2
-cache_read = 0.06
+input = 0.1
+output = 0.3
+cache_read = 0.02
 cache_write = 0.375
