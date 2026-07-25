@@ -19,7 +19,7 @@ input = 0.2275
 output = 0.91
 
 [limit]
-context = 131_702
+context = 131_072
 output = 8_192
 
 [modalities]
