@@ -11,9 +11,9 @@ open_weights = false
 tool_call = true
 
 [cost]
-input = 0.87
-output = 7
-cache_read = 0.087
+input = 1.26
+output = 10.101
+cache_read = 0.126
 
 [limit]
 context = 1_065_535
