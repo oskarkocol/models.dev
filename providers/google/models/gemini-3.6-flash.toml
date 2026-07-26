@@ -8,6 +8,7 @@ type = "effort"
 values = ["minimal", "low", "medium", "high"]
 
 [cost]
+cache_write = 0.083333
 input = 1.50
 output = 7.50
 cache_read = 0.15

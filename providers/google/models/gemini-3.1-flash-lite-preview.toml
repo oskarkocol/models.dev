@@ -2,7 +2,7 @@ name = "Gemini 3.1 Flash Lite Preview"
 description = "Legacy model retained for compatibility with older integrations"
 family = "gemini-flash-lite"
 release_date = "2026-03-03"
-last_updated = "2026-03-03"
+last_updated = "2026-07-26"
 attachment = true
 reasoning = true
 temperature = true
@@ -17,6 +17,8 @@ type = "effort"
 values = ["minimal", "low", "medium", "high"]
 
 [cost]
+cache_write = 0.083333
+reasoning = 1.5
 input = 0.25
 output = 1.50
 cache_read = 0.025
