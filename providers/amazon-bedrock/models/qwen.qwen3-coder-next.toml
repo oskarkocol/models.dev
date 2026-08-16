@@ -2,7 +2,7 @@ name = "Qwen3 Coder Next"
 description = "Qwen coding model for software agents, repository edits, and code reasoning"
 family = "qwen"
 release_date = "2026-02-06"
-last_updated = "2026-02-06"
+last_updated = "2026-08-16"
 attachment = false
 reasoning = true
 reasoning_options = []
@@ -12,8 +12,8 @@ structured_output = true
 open_weights = true
 
 [cost]
-input = 0.22
-output = 1.8
+input = 0.50
+output = 1.20
 
 [limit]
 context = 131_072
