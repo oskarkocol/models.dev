@@ -51,7 +51,7 @@ export const NanoGptModel = z.object({
 }).passthrough();
 
 export const NanoGptResponse = z.object({
-  data: z.array(NanoGptModel),
+  data: z.array(NanoGptModel).min(1),
 }).passthrough();
 
 export type NanoGptModel = z.infer<typeof NanoGptModel>;
@@ -96,6 +96,7 @@ const BASE_MODEL_ALIASES: Record<string, string | undefined> = {
   "claude-opus-4": "anthropic/claude-opus-4-0",
   "claude-sonnet-4": "anthropic/claude-sonnet-4-0",
   "cohere/north-mini-code": "cohere/north-mini-code-1-0",
+  "doubao-seed-2-0-code-preview-260215": "bytedance-seed/seed-2.0-code",
 };
 
 const NANO_GPT_VARIANT_SUFFIX = /(?::(?:thinking|none|minimal|low|medium|high|xhigh|max|\d+)|-thinking)$/i;
@@ -138,8 +139,10 @@ export function buildNanoGptModel(
   const inputLimit = sourceContext ?? existing?.limit?.input;
   const outputLimit = sourceOutputLimit ?? existing?.limit?.output;
   const releaseDate = dateFromTimestamp(model.created) ?? existing?.release_date;
-  const inferredSourceReasoning = capabilities.reasoning
-    ?? (model.reasoning_efforts != null ? true : undefined);
+  const hasReasoningEfforts = model.reasoning_efforts != null && model.reasoning_efforts.length > 0;
+  const inferredSourceReasoning = hasReasoningEfforts
+    ? true
+    : capabilities.reasoning ?? (model.reasoning_efforts != null ? true : undefined);
   const reasoning = inferredSourceReasoning ?? existing?.reasoning ?? false;
   const cost = buildCost(model.pricing, existing);
   if (baseModel !== undefined) {
@@ -255,8 +258,11 @@ function reasoningOptions(
   if (reasoning === false) return undefined;
   if (reasoning === undefined) return existing;
   if (model.reasoning_efforts == null) return existing ?? [];
-  if (model.reasoning_efforts.length === 0) return [];
-  return [{ type: "effort", values: [...model.reasoning_efforts] }];
+  if (model.reasoning_efforts.length === 0) return existing ?? [];
+  const order = ReasoningEffort.options;
+  const efforts = [...new Set(model.reasoning_efforts)]
+    .sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  return [{ type: "effort", values: efforts }];
 }
 
 export function resolveNanoGptBaseModel(modelID: string) {
