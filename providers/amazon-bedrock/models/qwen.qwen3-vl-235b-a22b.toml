@@ -2,7 +2,7 @@ name = "Qwen/Qwen3-VL-235B-A22B-Instruct"
 description = "Qwen vision-language model for visual reasoning, documents, and agent tasks"
 family = "qwen"
 release_date = "2025-10-04"
-last_updated = "2025-11-25"
+last_updated = "2026-08-30"
 attachment = true
 reasoning = false
 temperature = true
@@ -11,8 +11,8 @@ structured_output = true
 open_weights = false
 
 [cost]
-input = 0.3
-output = 1.5
+input = 0.53
+output = 2.66
 
 [limit]
 context = 262_000
